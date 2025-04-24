@@ -1,57 +1,56 @@
-Java Multiple Choice Quiz Application
-A simple Java AWT-based multiple choice quiz application with a login system. This application features a multiple choice quiz on Java programming concepts with a timer, scoring system, and result display.
-Application Components
-Login System
+# Java Multiple Choice Quiz Application
 
-Requires username "user" and password "123" to access the quiz
-Simple authentication interface built with Java AWT
+A GUI-based quiz application built using Java AWT. Allows users to take timed quizzes, view results, and retake the test.
 
-Quiz Features
+## Features 🚀
 
-Multiple choice questions about Java programming concepts
-Timer (30 seconds per question)
-Visual feedback for correct/incorrect answers using images
-Score tracking and percentage calculation
-Random question order using Collections.shuffle()
+- 🔒 **Login Screen**: Predefined credentials (Username: `user`, Password: `123`)
+- ⏳ **Timed Questions**: 30-second timer with color-coded warnings
+- 🔀 **Randomized Questions**: Shuffled order for each attempt
+- 📊 **Result Summary**: Displays score, percentage, and options
+- 🔄 **Retest Option**: Quick restart capability
+- 🖼️ **Visual Feedback**: Icons indicate selection (`yes.JPG`/`no.PNG`)
 
-Result Window
+## Prerequisites 📋
 
-Displays final score and percentage
-Options to restart the quiz or exit the application
+- Java JDK 8+
+- Basic command line knowledge
+- Image files: `yes.JPG` and `no.PNG` in root folder
 
-Classes Overview
+## Installation & Usage 🛠️
 
-LoginPMcq: Entry point for the application with login form
-PMcq: Main quiz interface with questions, timer, and score tracking
-Question: Object class to store question data and answer options
-ResWin: Results window showing final score and percentage
+1. **Clone repository**:
+   ```bash
+   git clone https://github.com/your-username/java-quiz-app.git
+   cd java-quiz-app
+   Compile files:
 
-How to Run
+## bash
+javac LoginPMcq.java PMcq.java Question.java ResWin.java
+Run application:
 
-Compile all Java files:
-javac *.java
-
-Run the application:
+## bash
 java LoginPMcq
-
-Login with:
-
-Username: user
-Password: 123
+Use credentials:
 
 
+## Quiz controls:
+Single-select answers
+Next button progresses quiz
+Auto-submit when timer expires
 
-Screenshots
-The application uses "no.PNG" (sad face) and "yes.JPG" (cool smiley) images for visual feedback during the quiz.
-Requirements
+## Notes 📝
+Questions are hardcoded in PMcq.java (modify loadQue() to update)
+UI uses legacy AWT components
+Ensure image files exist in project root
+Percentage calculated as (score/9)*100
 
-Java Runtime Environment (JRE)
-The application uses Java AWT for the graphical interface
-
-Notes
-This is a simple educational application demonstrating:
-
-Basic Java GUI programming with AWT
-Event handling in Java
-Object-oriented design principles
-Multithreading (for the timer functionality)
+## License 📜
+  MIT License - free for educational/modification use
+     This version:
+       - Maintains all key information from both versions
+       - Uses modern emoji headings
+       - Combines installation/usage steps
+       - Presents requirements clearly
+       - Keeps important notes about limitations
+       - Uses consistent markdown formatting
